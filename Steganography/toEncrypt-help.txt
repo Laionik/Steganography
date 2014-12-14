@@ -1,0 +1,13 @@
+﻿            foreach (char c in message)
+            {
+                var firstDigit = Convert.ToInt32(c) / 1000; // Extract the first digit of the ASCII
+                var secondDigit = (Convert.ToInt32(c) - (firstDigit * 1000)) / 100; //Extract the second digit of the ASCII
+                var thirdDigit = (Convert.ToInt32(c) - ((firstDigit * 1000) + (secondDigit * 100))) / 10;//Extract the third digit of the ASCII
+                var fourthDigit = (Convert.ToInt32(c) - ((firstDigit * 1000) + (secondDigit * 100) + (thirdDigit * 10))); //Extract the third digit of the ASCII
+                ascii.Add(firstDigit); // Add the first digit of the ASCII
+                ascii.Add(secondDigit); // Add the second digit of the ASCII
+                ascii.Add(thirdDigit); // Add the third digit of the ASCII
+                ascii.Add(fourthDigit); // Add the fourth digit of the ASCII
+                string x = c + "---" + firstDigit.ToString() + "---" + secondDigit.ToString() + "---" + thirdDigit.ToString() + "---" + fourthDigit.ToString();
+                MessageBox.Show(x);
+            }
