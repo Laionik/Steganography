@@ -11,3 +11,16 @@ c:\users\lukasz\documents\visual studio 2013\Projects\Steganography\Steganograph
 c:\users\lukasz\documents\visual studio 2013\Projects\Steganography\Steganography\bin\Debug\Steganography.pdb
 c:\users\lukasz\documents\visual studio 2013\Projects\Steganography\Steganography\obj\Debug\Steganography.exe
 c:\users\lukasz\documents\visual studio 2013\Projects\Steganography\Steganography\obj\Debug\Steganography.pdb
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\bin\Debug\Steganography.exe.config
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\obj\Debug\Steganography.exe
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\obj\Debug\Steganography.pdb
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\obj\Debug\Steganography.csprojResolveAssemblyReference.cache
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\obj\Debug\MainWindow.baml
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\obj\Debug\MainWindow.g.cs
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\obj\Debug\App.g.cs
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\obj\Debug\Steganography_MarkupCompile.cache
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\obj\Debug\Steganography.g.resources
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\obj\Debug\Steganography.Properties.Resources.resources
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\obj\Debug\Steganography.csproj.GenerateResource.Cache
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\bin\Debug\Steganography.exe
+C:\Users\Lukasz\Documents\GitHub\Steganography\Steganography\bin\Debug\Steganography.pdb

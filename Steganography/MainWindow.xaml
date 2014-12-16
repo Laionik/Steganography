@@ -12,9 +12,9 @@
         <!-- left side -->
         <Image x:Name="img_start" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="150" Width="200" />
         <Button x:Name="BT_load" Content="Load image" HorizontalAlignment="Left"  Margin="10,165,0,0" VerticalAlignment="Top" Height="20" Width="200" Click="BT_load_Click"/>
-        <TextBox x:Name="TB_toEncrypt" Text="" HorizontalAlignment="Left" Margin="10,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70"  Width="200" ToolTip="Enter your message to encrypt" IsEnabled="false"/>
-        <RadioButton x:Name="RB_encrypt" Content="Encrypt" Foreground="White" HorizontalAlignment="Left" Height="20" Margin="10,190,0,0" VerticalAlignment="Top" Width="70" Checked="RB_encrypt_Checked"/>
-        <RadioButton x:Name="RB_decrypt" Content="Decrypt" Foreground="White" HorizontalAlignment="Left" Height="20" Margin="85,190,0,0" VerticalAlignment="Top" Width="70" Checked="RB_decrypt_Checked"/>
+        <TextBox x:Name="TB_toHide" Text="" HorizontalAlignment="Left" Margin="10,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70"  Width="200" ToolTip="Enter your message to hide" IsEnabled="false"/>
+        <RadioButton x:Name="RB_hide" Content="Hide" Foreground="White" HorizontalAlignment="Left" Height="20" Margin="10,190,0,0" VerticalAlignment="Top" Width="70" Checked="RB_hide_Checked"/>
+        <RadioButton x:Name="RB_discover" Content="Discover" Foreground="White" HorizontalAlignment="Left" Height="20" Margin="85,190,0,0" VerticalAlignment="Top" Width="70" Checked="RB_discover_Checked"/>
         <Button x:Name="BT_do" Content="Let's go!" HorizontalAlignment="Left"  Margin="10,290,0,0" VerticalAlignment="Top" Height="20" Width="200" Click="BT_do_Click"/>
 
         <!-- right side -->

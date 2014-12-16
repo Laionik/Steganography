@@ -29,7 +29,7 @@ namespace Steganography
         public MainWindow()
         {
             InitializeComponent();
-            RB_encrypt.IsChecked = true;
+            RB_hide.IsChecked = true;
         }
         /*konwertowanie obrazu*/
         private Bitmap BitmapImage2Bitmap(BitmapImage bitmapImage)
@@ -96,9 +96,9 @@ namespace Steganography
         }
 
         /*Szyfrowanie i deszyfrowanie informacji*/
-        void encrypt()
+        void hide()
         {
-            var message = TB_toEncrypt.Text;
+            var message = TB_toHide.Text;
             System.Drawing.Color Pixels;
             System.Drawing.Color color;
             string R, G, B, check = "";
@@ -184,12 +184,12 @@ namespace Steganography
             }
             img_result.Source = ToBitmapSource(bmp);
             System.Drawing.Image img = (System.Drawing.Image)bmp;
-            img.Save("encrypted.png", ImageFormat.Png);  // Correct PNG save
+            img.Save("hide.png", ImageFormat.Png);  // Correct PNG save
             MessageBox.Show("It's done");
             img_start.Source = null;
         }
 
-        void decrypt()
+        void discover()
         {
             string message = "";
             System.Drawing.Color Pixels;
@@ -258,33 +258,35 @@ namespace Steganography
             }
         }
 
-        private void RB_encrypt_Checked(object sender, RoutedEventArgs e)
+        private void RB_hide_Checked(object sender, RoutedEventArgs e)
         {
-            TB_toEncrypt.IsEnabled = true;
-            TB_toEncrypt.ToolTip = "Enter your message to encrypt";
-            BT_do.Content = "Let's encrypt the message";
-            img_help.ToolTip = "1. Load image by pressing \"Load image\"\n2. Enter your message\n3. Press \"Let's encrypt the message\" or check \"Decrypt\" to decrypt image";
+            TB_toHide.IsEnabled = true;
+            TB_result.IsEnabled = false;
+            TB_toHide.ToolTip = "Enter your message to encrypt";
+            BT_do.Content = "Let's hide the message";
+            img_help.ToolTip = "1. Load image by pressing \"Load image\"\n2. Enter your message\n3. Press \"Let's hide the message\" or check \"Decrypt\" to decrypt image";
             img_start.Source = null;
             img_result.Source = null;
         }
 
-        private void RB_decrypt_Checked(object sender, RoutedEventArgs e)
+        private void RB_discover_Checked(object sender, RoutedEventArgs e)
         {
-            TB_toEncrypt.IsEnabled = false;
-            TB_toEncrypt.ToolTip = "If you wanna encrypt, please check Encrypt RadioButton";
-            BT_do.Content = "Let's decrypt the image";
-            img_help.ToolTip = "1. Press \"Let's decrypt the image\" or check \"Encrypt\" to encrypt image ";
+            TB_result.IsEnabled = true;
+            TB_toHide.IsEnabled = false;
+            TB_toHide.ToolTip = "If you wanna hide a message, please check Hide RadioButton";
+            BT_do.Content = "Let's discover the message";
+            img_help.ToolTip = "1. Press \"Let's discover the image\" or check \"Hide\" to hide image ";
             img_start.Source = null;
             img_result.Source = null;
         }
 
         private void BT_do_Click(object sender, RoutedEventArgs e)
         {
-            if (RB_encrypt.IsChecked == true)
+            if (RB_hide.IsChecked == true)
             {
-                if (myImage != null && TB_toEncrypt.Text != "")
+                if (myImage != null && TB_toHide.Text != "")
                 {
-                    encrypt();
+                    hide();
                 }
                 else
                     MessageBox.Show("No image or message to encrypt");
@@ -293,7 +295,7 @@ namespace Steganography
             {
                 if (myImage != null)
                 {
-                    decrypt();
+                    discover();
                 }
                 else
                     MessageBox.Show("No image to decrypt");
